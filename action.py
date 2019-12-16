@@ -13,3 +13,5 @@ env_vars = [
     'GITHUB_HEAD_REF',
     'GITHUB_BASE_REF'
 ]
+
+print(env_vars)
