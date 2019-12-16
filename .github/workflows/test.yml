@@ -8,11 +8,12 @@ on:
   push:
     paths: 
       - action.*
+      - '.github/workflows/test.yml'
     branches:
       - master
 
 jobs:
-  Run Test:
+  run-test:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
