@@ -17,10 +17,11 @@ const env_vars = [
 ];
 
 async function run(): Promise<void> {
+    console.log(JSON.stringify(process.env))
     try {
         for (const env_var of env_vars) {
             if (env_var in process.env) {
-                core.debug(`Export: ${env_var}=${process.env[env_var]}`);
+                core.debug(`Export: ${env_var}=${process.env[env_var]}`)
                 core.exportVariable(env_var, process.env[env_var])
             }
         }
@@ -29,4 +30,4 @@ async function run(): Promise<void> {
     }
 }
 
-run();
+run()

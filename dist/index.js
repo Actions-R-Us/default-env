@@ -397,6 +397,7 @@ function run() {
     return __awaiter(this, void 0, void 0, function () {
         var _i, env_vars_1, env_var;
         return __generator(this, function (_a) {
+            console.log(JSON.stringify(process.env));
             try {
                 for (_i = 0, env_vars_1 = env_vars; _i < env_vars_1.length; _i++) {
                     env_var = env_vars_1[_i];
