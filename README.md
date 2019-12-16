@@ -1,7 +1,7 @@
 # Default Environment
-A github action that populates the workflow `env` with the default environment variables available in all environments.
+A github action that populates the workflow `env` with the [default environment variables](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables) available in all environments.
 
-The default variables are listed [here](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables). After running this action, each subsequent step will have access to these variables by accessing `${{env.<variable_name>}}`.
+After running this action, each subsequent step will have access to these variables by accessing [`env`](https://help.github.com/en/actions/automating-your-workflow-with-github-actions/contexts-and-expression-syntax-for-github-actions#contexts) context.
 
 # Usage
 
@@ -19,3 +19,5 @@ The default variables are listed [here](https://help.github.com/en/actions/autom
     GITHUB_ACTOR: 'github'
     GITHUB_REF: 'master'
 ```
+
+After running this action, the environment variables specified will replace the default ones

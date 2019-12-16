@@ -19,7 +19,7 @@ const env_vars = [
 async function run(): Promise<void> {
     try {
         for (const env_var of env_vars) {
-            if (env_var in process.env) {
+            if (env_var in process.env && process.env[env_var] !== "") {
                 core.exportVariable(env_var, process.env[env_var])
             }
         }
