@@ -1,0 +1,16 @@
+# See: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/metadata-syntax-for-github-actions
+# Also: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables
+
+name: "Default Environment"
+author: smac89
+description: "Populates the `env` context with the default environment variables"
+inputs:
+  override:
+    description: 'Can be used to add more environment variables'
+    required: false
+runs:
+  using: python3
+  main: 'action.py'
+branding:
+  icon: 'box'
+  color: 'orange'
