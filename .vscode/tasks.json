@@ -1,0 +1,27 @@
+{
+    // THIS DOESN"T WORK WITH VSCODE 1.41 DUE TO
+    // https://github.com/microsoft/vscode/issues/86889
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "typescript",
+            "tsconfig": "tsconfig.json",
+            "option": "watch",
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+        }
+    ]
+}

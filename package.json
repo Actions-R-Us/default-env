@@ -1,0 +1,24 @@
+{
+    "name": "default-env",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/smac89/default-env.git"
+    },
+    "scripts": {
+        "watch": "ncc build action.ts --watch"
+    },
+    "author": {
+        "name": "smac89",
+        "url": "https://github.com/smac89"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@actions/core": "^1.2.0"
+    },
+    "devDependencies": {
+        "typescript": "3.7.3",
+        "@types/node": "^12.12.18",
+        "@zeit/ncc": "^0.20.5"
+    }
+}

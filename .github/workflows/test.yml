@@ -1,4 +1,4 @@
-name: Test Default Env Workflow
+name: Test Default Env Action
 
 on:
   release:
@@ -6,9 +6,6 @@ on:
       - published
 
   push:
-    paths: 
-      - action.*
-      - '.github/workflows/test.yml'
     branches:
       - master
 

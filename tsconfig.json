@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es2015",
+        "outDir": "dist",
+        "alwaysStrict": true,
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": false,
+        "esModuleInterop": true,
+        "noUnusedLocals": true
+    },
+    "files": [
+        "action.ts"
+    ],
+    "compileOnSave": true
+}

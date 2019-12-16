@@ -5,9 +5,8 @@ name: 'Default Environment'
 author: 'smac89'
 description: 'Populates the `env` context with the default environment variables'
 runs:
-  using: 'docker'
-  image: 'docker://python:3.7-alpine'
-  entrypoint: 'action.py'
+  using: 'node12'
+  main: 'dist/index.js'
 branding:
   icon: 'box'
   color: 'orange'
