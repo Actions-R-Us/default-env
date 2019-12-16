@@ -4,10 +4,6 @@
 name: "Default Environment"
 author: smac89
 description: "Populates the `env` context with the default environment variables"
-inputs:
-  override:
-    description: 'Can be used to add more environment variables'
-    required: false
 runs:
   using: python3
   main: 'action.py'
