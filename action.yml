@@ -1,12 +1,13 @@
 # See: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/metadata-syntax-for-github-actions
 # Also: https://help.github.com/en/actions/automating-your-workflow-with-github-actions/using-environment-variables#default-environment-variables
 
-name: "Default Environment"
-author: smac89
-description: "Populates the `env` context with the default environment variables"
+name: 'Default Environment'
+author: 'smac89'
+description: 'Populates the `env` context with the default environment variables'
 runs:
-  using: python3
-  main: 'action.py'
+  using: 'docker'
+  image: 'docker://python:3.7-alpine'
+  entrypoint: 'action.py'
 branding:
   icon: 'box'
   color: 'orange'
