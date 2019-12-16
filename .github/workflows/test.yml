@@ -1,5 +1,7 @@
 name: Test Default Env Action
 
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow#referencing-actions-in-your-workflow
+
 on:
   release:
     types:
@@ -15,3 +17,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: ./
+    - name: 'Show the env'
+      run: echo 'Check the environment for this step'

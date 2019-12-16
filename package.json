@@ -6,7 +6,7 @@
         "url": "git+https://github.com/smac89/default-env.git"
     },
     "scripts": {
-        "watch": "ncc build action.ts --watch"
+        "watch": "ncc build action.ts --watch --minify"
     },
     "author": {
         "name": "smac89",
