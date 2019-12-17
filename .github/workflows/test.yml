@@ -9,7 +9,7 @@ on:
 
   push:
     branches:
-      - master
+      - 'release/v*'
 
 jobs:
   run-test:
