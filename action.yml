@@ -6,7 +6,7 @@ author: 'smac89'
 description: 'Populates the `env` context with the default environment variables'
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'lib/index.js'
 branding:
   icon: 'box'
   color: 'orange'
