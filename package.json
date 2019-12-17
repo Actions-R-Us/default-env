@@ -3,15 +3,15 @@
     "version": "1.0.1-dev",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/smac89/default-env.git"
+        "url": "git+https://github.com/Actions-R-Us/default-env.git"
     },
     "main": "lib/index.js",
     "scripts": {
         "watch": "ncc build action.ts --watch --minify --out lib"
     },
     "author": {
-        "name": "smac89",
-        "url": "https://github.com/smac89"
+        "name": "Actions-R-Us",
+        "url": "https://github.com/Actions-R-Us"
     },
     "license": "MIT",
     "dependencies": {
