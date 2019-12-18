@@ -1,4 +1,4 @@
-name: Test Default Env Action
+name: Test And Update Versions
 
 # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/configuring-a-workflow#referencing-actions-in-your-workflow
 
@@ -15,7 +15,14 @@ jobs:
   run-test:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: ./
-    - name: 'Show the env'
-      run: echo 'Check the environment for this step'
+      - uses: actions/checkout@v2
+      - uses: ./
+      - name: 'Show the env'
+        run: echo 'Check the environment for this step'
+
+  actions-tagger:
+    runs-on: windows-latest
+    steps:
+      - uses: Actions-R-Us/actions-tagger@latest
+        env:
+          GITHUB_TOKEN: '${{secrets.GITHUB_TOKEN}}'
